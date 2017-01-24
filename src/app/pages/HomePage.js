@@ -1,6 +1,6 @@
 import React, {Component, PropTypes} from 'react'
 import Helmet from 'react-helmet'
-import CSSModules from 'react-css-modules'
+// import CSSModules from 'react-css-modules'
 
 import withData from 'hocs/withData'
 import withPage from 'hocs/withPage'
@@ -8,11 +8,11 @@ import { fetchData1 } from 'modules/post/postActions'
 
 import ErrorPage from 'noxt/app/pages/ErrorPage'
 
-import styles from 'styles/pages/Homepage.scss'
+// import styles from 'styles/pages/Homepage.scss'
 
 @withData(({ post, error }) => ({ post, error }), [ fetchData1 ])
 @withPage()
-@CSSModules(styles)
+// @CSSModules(styles)
 class HomePage extends Component {
   render () {
     const { post, error } = this.props
